@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/utsc.jpg") top center;
+  background: url("../img/background.png") top center;
   background-size: cover;
   position: relative;
 }
@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 45px 0;
   overflow: hidden;
 }
 
@@ -569,9 +569,6 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us {
-  padding-top: 10px;
-}
 
 .why-us .box {
   padding: 50px 30px;
