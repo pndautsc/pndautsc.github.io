@@ -8,13 +8,22 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.container.position-relative.aos-init.aos-animate{
+  /*        margin-left: 8%;
+  margin-right: 8%;*/
+}
+
 #hero h4 {
       color:  white;
-      font-size: calc(1.575rem + .3vw);
+      font-size: 40px;
+/*        margin-left: 8%;
+  margin-right: 8%;*/
+  word-spacing: 30px;
 }
 body {
   font-family: "Open Sans", sans-serif;
   color: #8c8b90;
+  opacity: 1;
 }
 
 a {
@@ -28,8 +37,10 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Franklin Gothic Heavy";
 }
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -410,17 +421,19 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/background.png") top center;
+  /*background: url("../img/background.png") top center;*/
+  background-color: hsl(316, 100%, 5%);
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
   position: absolute;
   bottom: 0;
   top: 0;
@@ -430,17 +443,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 275px;
+  line-height: 100%;
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(215, 9, 71);
+  letter-spacing: 45px;
+  font-family: Franklin Gothic Heavy;
 }
 
 #hero h2 {
   color: #eee;
   margin-bottom: 30px;
   font-size: 24px;
+  font-family: Franklin Gothic Heavy;
 }
 
 #hero .btn-get-started {
@@ -463,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/*/
   }
 }
 
@@ -500,12 +515,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #191919;
+  color: #e1a0b0;
   position: relative;
   z-index: 2;
 }
@@ -570,42 +585,14 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 
-.why-us .box {
-  padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
+.why-us{
+  color: #8c8b90;
+  font-size: 50px;
 }
 
-.why-us .box span {
-  display: block;
-  font-size: 28px;
-  font-weight: 700;
-  color: #ed5b5b;
-}
+.why-us-det{
+    font-size: 30px;
 
-.why-us .box h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
-  margin: 20px 0;
-  color: #191919;
-}
-
-.why-us .box p {
-  color: #aaaaaa;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-
-.why-us .box:hover {
-  background: #cc1616;
-  padding: 30px 30px 70px 30px;
-  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-}
-
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -641,15 +628,14 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 80px 20px;
+  padding: 20px 20px;
   transition: all ease-in-out 0.3s;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  height: 250px;
   background: #cc1616;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -657,6 +643,7 @@ section {
   justify-content: center;
   margin-bottom: 20px;
   transform-style: preserve-3d;
+  background: url("../img/Tuesdays.png") top center;
 }
 
 .services .icon-box .icon i {
@@ -682,8 +669,15 @@ section {
   font-size: 24px;
 }
 
+.slogan{
+  font-family: "Franklin Gothic Heavy";
+  color: rgb(215, 9, 71) !important;
+  word-spacing: 10px !important;
+  opacity: 90%;
+}
+
 .services .icon-box h4 a {
-  color: #191919;
+  color: #ba1f3f;
 }
 
 .services .icon-box p {
@@ -724,9 +718,24 @@ section {
 }
 
 .cta h3 {
-  color: #fff;
+  color: #8c8b90;
   font-size: 28px;
   font-weight: 700;
+}
+
+.initiative{
+ font-family: 'BOOTSTRAP-ICONS';
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #8c8b90;
+    color: #8c8b90;
+    font-size: 30px;
+}
+
+.about_img{
+  max-width: 100%;
 }
 
 .cta p {
@@ -1410,4 +1419,14 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+.col-lg-4.col-md-6.d-flex.align-items-stretch.aos-init.aos-animate {
+    box-shadow: steelblue;
+    box-shadow: 5px 10px #f7f3f388;
+}
+
+.events{
+  max-width: 100%;
+  padding-bottom: 20px;
 }
