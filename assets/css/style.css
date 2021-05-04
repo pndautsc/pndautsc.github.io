@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: calc(100vh - 110px);
   /*background: url("../img/background.png") top center;*/
-  background-color: hsl(316, 100%, 5%);
+  background-color: #232329;
   background-size: cover;
   position: relative;
 }
@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 275px;
   line-height: 100%;
   text-transform: uppercase;
-  color: rgb(215, 9, 71);
+  color: #ba1f3f;
   letter-spacing: 45px;
   font-family: Franklin Gothic Heavy;
 }
@@ -716,9 +716,8 @@ section {
 
 .slogan{
   font-family: "Franklin Gothic Heavy";
-  color: rgb(215, 9, 71) !important;
+  color: #ba1f3f !important;
   word-spacing: 10px !important;
-  opacity: 90%;
 }
 
 .services .icon-box h4 a {
