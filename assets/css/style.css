@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: calc(100vh - 110px);
   /*background: url("../img/background.png") top center;*/
-  background-color: #232329;
+  background-color: #14141f;
   background-size: cover;
   position: relative;
 }
