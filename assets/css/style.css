@@ -424,7 +424,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero {
   width: 100%;
-  height: calc(100vh - 110px);
   /*background: url("../img/background.png") top center;*/
   background-color: #14141f;
   background-size: cover;
@@ -476,21 +475,23 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #cc1616;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    /*background-attachment: fixed;*/*/
+@media (min-width: 769px) and (max-width: 991px) {
+  #hero h1{
+    font-size: 220px;
   }
 }
 
 @media (max-width: 768px) {
   #hero {
     text-align: center;
+    font-family: Times;
   }
   #hero .container {
     padding-top: 40px;
   }
   #hero h1 {
-    font-size: 100px;
+    font-size: 150px;
+    word-spacing: 20px;
   }
   #hero h2 {
     font-size: 18px;
@@ -507,6 +508,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 425px) and (max-width: 550px) {
+  #hero h1 {
+    font-size: 110px;
+    letter-spacing: 20px !important;
+  }
+}
+
 @media (max-width: 425px) {
   #hero {
     text-align: center;
@@ -515,7 +523,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 40px;
   }
   #hero h1 {
-    font-size: 90px;
+    font-size: 110px;
+    letter-spacing: 15px !important;
   }
   #hero h2 {
     font-size: 18px;
@@ -628,7 +637,7 @@ section {
 }
 
 .why-us-det{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 @media (max-width: 425px) {
@@ -725,9 +734,9 @@ section {
 }
 
 .services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 0;
 }
 
 .services .icon-box:hover {
@@ -1473,4 +1482,8 @@ section {
 .events{
   max-width: 100%;
   padding-bottom: 20px;
+}
+
+p {
+  font-family: "Times New Roman"
 }
