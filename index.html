@@ -68,8 +68,6 @@
             <ul>
               <li><a href="#">Games Night</a></li>
               <li><a href="#">Tuesday Talks</a></li>
-              <li><a href="#">Journal Club</a></li>
-              <li><a href="#">Book Club</a></li>
               <li><a href="#">Wellness Wednesdays</a></li>
               <li><a href="#">Academic Research Panel</a></li>
             </ul>
@@ -91,10 +89,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <br>
-      <br>
+        <br>
+        <br>
 
-    <center><h4>WELCOME TO</h4></center>
+   <center><h4>WELCOME TO</h4></center>
     <center><h1 class = "main-title">PNDA</h1></center>
     <center><h4>Psychology & Neuroscience Departmental Association</h4></center>    
     <br>
@@ -103,10 +101,18 @@
 
     <center><h4 class="slogan">YOUR HUB FOR ALL THINGS PSYCHOLOGY, NEUROSCIENCE, AND MENTAL HEALTH STUDIES AT UTSC </h4></center>
     <br>
-    <!-- Your hub for all things psychology, neuroscience, and mental health studies at UTSCa
-     --></div>
-  </section><!-- End Hero -->
+    <!-- Your hub for all things psychology, neuroscience, and mental health studies at UTSCa -->
+    </div>
+  </section><!-- End Hero <!-->
 
+  <script>
+window.addEventListener("scroll", function() {
+  const distance = window.scrollY
+  document.querySelector("#hero").style.transform = `translateY(${distance *
+    1}px)`
+
+})
+  </script>
   <main id="main">
 
    
@@ -192,55 +198,39 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Events</span>
-          <h2>Events and Initatives</h2>
+          <span>Events and Initiatives</span>
+         <h2>Events and Initiatives</h2>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box">
-              <img class="events" src="assets/img/Tuesdays.jpg">
-          <a class="initiative" href="#">TUESDAY TALKS</a>
-
+            <div class="event-container col-lg-5 col-md-8 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="icon-box">
+                <img class="events" src="assets/img/Tuesdays.jpg">
+            <a class="initiative" href="#">TUESDAY TALKS</a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+        
+          <div class="event-container col-lg-5 col-md-8 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
             <div class="icon-box">
               <img class="events" src="assets/img/gamesnight.PNG">
               <a class="initiative" href="#">GAMES NIGHT</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <img class="events" src="assets/img/bookclub.PNG">
-              <a class="initiative" href="#">JOURNAL CLUB</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-            <div class="icon-box">
-              <img class="events" src="assets/img/bookclub.PNG">
-              <a class="initiative" href="#">BOOK CLUB</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="event-container col-lg-5 col-md-8 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
             <div class="icon-box">
               <img class="events" src="assets/img/wednesdays.PNG">
               <a class="initiative" href="#">WELLNESS WEDNESDAYS</a>
-             </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+          <div class="event-container col-lg-5 col-md-8 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
             <div class="icon-box">
               <img class="events" src="assets/img/academicwellness.PNG">
               <a class="initiative" href="#">ACADEMIC RESEARCH PANEL</a>              
             </div>
           </div>
 
-        </div>
 
       </div>
     </section><!-- End Services Section -->
@@ -485,9 +475,9 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Connects</span>
+          <h2>Connect!</h2>
+          <h4>YOUR HUB FOR ALL THINGS PSYCHOLOGY, NEUROSCIENCE, AND MENTAL HEALTH STUDIES AT UTSC </h4>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -499,7 +489,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
@@ -507,6 +497,14 @@
             </div>
           </div>
 
+          <div class="col-lg-2">
+            <div class="info-box  mb-4">
+                <a href="https://www.facebook.com/thepnda/" class="instagram"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/pnda_utsc/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <h3>Follow Us</h3>
+              <br>
+            </div>
+          </div>
           
 
         </div>
@@ -585,23 +583,10 @@
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <h4>Join Our Membership</h4>
+            <p>Click here to go to our membership form!</p>
+<button type="submit">Join</button>
 
           </div>
 
@@ -611,7 +596,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Day</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>PNDA</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
