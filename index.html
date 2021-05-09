@@ -108,10 +108,12 @@
   <script>
 window.addEventListener("scroll", function() {
   const distance = window.scrollY
-  document.querySelector("#hero").style.transform = `translateY(${distance *
-    1}px)`
+  document.querySelector("#hero").style.transform = `translateY(${distance*0.5}px)`
 
-})
+}) 
+  setTimeout(() => {    
+    document.querySelector("#contact").classList.add("animate-me")
+  }, 400)
   </script>
   <main id="main">
 

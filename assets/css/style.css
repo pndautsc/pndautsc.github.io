@@ -433,6 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 body{
     background-color: #14141f !important;
+    max-height: 100%;
 }
 
 #hero {
@@ -450,6 +451,8 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+   overflow: hidden;
+  position:relative;  
 }
 
 #hero:before {
